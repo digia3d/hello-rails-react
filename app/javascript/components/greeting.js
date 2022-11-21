@@ -13,7 +13,7 @@ function Greeting() {
 
   return (
     <>
-      <h1>If you want to se diferent greeting, than refresh the page 😊.</h1>
+      <h1>If you want to see diferent greeting, than refresh the page 😊.</h1>
       <ul>
         {chooseGreeting.map((greeting) => (
           <li>
