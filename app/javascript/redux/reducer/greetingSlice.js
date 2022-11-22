@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-const baseUrl = 'http://localhost:3000/api/v1/greetings';
+const baseUrl = 'api/v1/greetings';
 
 const fetchGreeting = createAsyncThunk(
   'greeting/fetchGreeting',
@@ -18,7 +18,7 @@ const greetingSlice = createSlice({
     value: [],
     reducers: {
       addGreeting: (state, action) => {
-        state.value.push(action.payload);
+        state.push(action.payload);
       },
     },
     extraReducers: {
