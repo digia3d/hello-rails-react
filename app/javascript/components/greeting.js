@@ -4,7 +4,7 @@ import { fetchGreeting } from "../redux/reducer/greetingSlice";
 
 function Greeting() {
   const dispatch = useDispatch();
-  const chooseGreeting = useSelector((state) => state.greeting.value);
+  const chooseGreeting = useSelector((state) => state.greeting);
   console.log(chooseGreeting);
 
   useEffect(() => {
