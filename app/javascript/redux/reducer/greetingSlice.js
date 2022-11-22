@@ -1,21 +1,19 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import axios from 'axios'
 
 const baseUrl = 'api/v1/greetings';
 
-const fetchGreeting = createAsyncThunk(
+export const fetchGreeting = createAsyncThunk(
   'greeting/fetchGreeting',
   async () => {
-    const response = await fetch(baseUrl);
-    const data = await response.json();
-    console.log(data);
-    return data;
+    const response = await axios.get(baseUrl);
+    return response.data;
   }
 );
 
 const greetingSlice = createSlice({
   name: 'greeting',
-  initialState: {
-    value: [],
+  initialState: [],
     reducers: {
       addGreeting: (state, action) => {
         state.push(action.payload);
@@ -23,12 +21,11 @@ const greetingSlice = createSlice({
     },
     extraReducers: {
       [fetchGreeting.fulfilled]: (state, action) => {
-        state.status = 'success';
+        state.status = 'succeeded';
         state.push(action.payload);
         console.log(state);
       },
     }
-  }
 });
 
 export const { addGreeting } = greetingSlice.actions;

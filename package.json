@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "hello_rails_react",
   "private": "true",
   "scripts": {
     "build": "webpack --config webpack.config.js"
@@ -17,12 +17,14 @@
     "@babel/preset-react": "^7.18.6",
     "@hotwired/turbo-rails": "^7.2.4",
     "@reduxjs/toolkit": "^1.9.0",
+    "axios": "^1.2.0",
     "babel-loader": "^9.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.0.2",
     "redux": "^4.2.0",
-    "redux-thunk": "^2.4.2"
+    "redux-thunk": "^2.4.2",
+    "webpack": "^5.75.0"
   }
 }
