@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchGreeting } from "../redux/greetingSlice";
@@ -11,15 +12,15 @@ const Greeting = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <h1>If you want to see diferent greeting, than refresh the page 😊.</h1>
-      <ul>
+    <div className="greeting_div">
+      <h1 className="heading">Refresh the page to view the same greeting in different languages</h1>
+      <ul className="list">
         {greeting.map((greeting) => (
-          <li key={greeting.id}>{greeting.greeting}</li>
+          <li className="list_item" key={greeting.id}>{greeting.greeting}</li>
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
 export default Greeting;
