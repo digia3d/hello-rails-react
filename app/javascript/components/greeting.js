@@ -12,9 +12,9 @@ const Greeting = () => {
   }, [dispatch]);
 
   return (
-    <div className="greeting_div">
-      <h1 className="heading">Refresh the page to view the same greeting in different languages</h1>
-      <ul className="list">
+    <div>
+      <h1>Refresh the page to view the same greeting in different languages</h1>
+      <ul>
         {greeting.map((greeting) => (
           <li className="list_item" key={greeting.id}>{greeting.greeting}</li>
         ))}
