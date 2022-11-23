@@ -1,24 +1,62 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# hello-rails-react
 
-Things you may want to cover:
+> This is a project designed to implement a connection between a Ruby on Rails back-end and React front-end.
 
-* Ruby version
+## Build with:
 
-* System dependencies
+  - Rails
+  - React
+  - Webpack
+  - Posgresql
 
-* Configuration
+## Getting Started
 
-* Database creation
+### Clone the repository
 
-* Database initialization
+    ```bash
+    $ git clone https://github.com/digia3d/hello-rails-react
+    $ cd hello-rails-react
+    ```
+### Run project
 
-* How to run the test suite
+    ```bash
+    ./bin/dev
+    ```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Open page in browser
 
-* Deployment instructions
+    ```bash
+$ http://localhost:3000/
+```
 
-* ...
+### Link to see the Greetings
+
+    ```http://localhost:3000/api/v1/greetings
+
+
+## Author
+
+👤 **Aleksandra Ujvari**
+
+- GitHub: [@digia3d](https://github.com/digia3d)
+- LinkedIn: [Aleksandra (Digital Marketing A3D) Ujvari](https://www.linkedin.com/in/aleksandra-ujvari-85235a210/) 
+- Twitter: [@ujvari65](https://twitter.com/ujvari65)
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+## Feel free to check the [issues page](https://github.com/digia3d/hello-rails-react/issues).
+
+## Show your support
+
+##   Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+   - Fellow Microverse students
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
